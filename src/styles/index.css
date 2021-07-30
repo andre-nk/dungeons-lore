@@ -10,7 +10,7 @@
   padding: 20px;
   display: flex;
   align-items: center;
-  max-width: 600px;
+  max-width: 80rem;
   margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
 }
@@ -35,7 +35,7 @@
 }
 
 .content{
-  max-width: 600px;
+  max-width: 80rem;
   margin: 40px auto;
   padding: 20px;
 }
@@ -43,14 +43,20 @@
 .spell-preview {
   padding: 20px;
   margin: 20px 0;
-  border: 1.5px solid #fafafa;
+  border: 3px solid #f3f3f3;
   border-radius: 10px;
 }
+
 .spell-preview:hover {
-  box-shadow: 1px 3px 5px rgba(0,0,0,0.2);
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
 }
+
 .spell-preview h2 {
   font-size: 20px;
   color: #E40511;
   margin-bottom: 8px;
+}
+
+.spell-preview-list{
+  padding-top: 30px;
 }

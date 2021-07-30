@@ -1,7 +1,4 @@
-import { useState } from "react";
-
 const Navbar = () => {
-
     return (
         <nav className="navbar">
             <h1>Dungeons Lore</h1>

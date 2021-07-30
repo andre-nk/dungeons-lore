@@ -1,4 +1,5 @@
 import { useState } from "react";
+import SpellPreviewList from '../components/spell_preview_list'
 
 const Home = () => {
 
@@ -10,14 +11,8 @@ const Home = () => {
 
     return (
         <div className="home">
-            {
-                spells.map((spell) => (
-                    <div className="spell-preview" key = {spell.id}>
-                        <h2>{ spell.name }</h2>
-                        <p>{ spell.type }</p>
-                    </div>
-                ))
-            }
+            <SpellPreviewList spells = {spells} title = "All spells"/>
+            <SpellPreviewList spells = {spells.filter((blog) => blog.type == 'Abjuration')} title = "Abjuration Spells"/>
         </div>
     );
 }
