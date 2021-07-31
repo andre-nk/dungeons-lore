@@ -40,11 +40,21 @@
   padding: 20px;
 }
 
+.loader{
+  width:100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
 .spell-preview {
   padding: 20px;
   margin: 20px 0;
   border: 3px solid #f3f3f3;
   border-radius: 10px;
+  display: grid;
+  grid-template-columns: 95% auto auto;
+  align-items: center;
 }
 
 .spell-preview:hover {
