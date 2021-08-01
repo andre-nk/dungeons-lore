@@ -1,14 +1,25 @@
 import Navbar from './navbar';
 import Home from './home';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import CreateSpell from '../components/create_spell';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar/>
-      <div className="content">
-          <Home/>
+    <Router>
+      <div className="App">
+        <Navbar/>
+        <div className="content">
+          <Switch>
+            <Route exact path="/">
+              <Home/>
+            </Route>
+            <Route path="/create">
+              <CreateSpell/>
+            </Route>
+          </Switch>
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 

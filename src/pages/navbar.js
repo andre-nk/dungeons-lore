@@ -5,7 +5,6 @@ const Navbar = () => {
             <div className="links">
                 <a href="/">Home</a>
                 <button
-                    href="/create"
                     style={{
                         color: "white",
                         backgroundColor: "#E40511",
@@ -14,7 +13,7 @@ const Navbar = () => {
                         border: "0px"
                     }}
                     onClick={() => {}}
-                >New Spell</button>
+                ><a href="/create">New spell</a></button>
             </div>
         </nav>
     );

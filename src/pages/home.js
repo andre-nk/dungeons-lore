@@ -12,7 +12,7 @@ const Home = () => {
                 isLoading
                 ? <div className="loader">
                     <Loader type="ThreeDots" color="#E40511" height={60} width={60} />
-                  </div>
+                  </div>                
                 : <SpellPreviewList spells = {spells} title = "All spells"/>
             }
 
