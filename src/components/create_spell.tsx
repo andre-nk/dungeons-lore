@@ -8,7 +8,7 @@ const CreateSpell = () => {
     const [type, setType] = useState('Abjuration');
     const history = useHistory();
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e:any) => {
         e.preventDefault();
         history.push('/');
     }
@@ -20,7 +20,7 @@ const CreateSpell = () => {
                 <label>Spell name:</label>
                 <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} required/>
                 <label>Spell description and effects:</label>
-                <textarea rows="8" value={description} onChange={(e) => setDescription(e.target.value)} required/>
+                <textarea rows={8} value={description} onChange={(e) => setDescription(e.target.value)} required/>
                 <label>Spell type:</label>
                 <select value={type} onChange={(e) => setType(e.target.value)}>
                     <option value="Abjuration">Abjuration</option>

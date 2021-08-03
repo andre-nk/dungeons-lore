@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 
 const SpellDetails = () => {
 
-    const {id} = useParams();
+    const {id}: {id:string} = useParams();
 
     return (
         <div className="spell-details">

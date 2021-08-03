@@ -1,18 +1,18 @@
 import { useState, useEffect } from "react";
 
-const useFetch = (size) => {
+const useFetch = (size:number) => {
     const [spells, addSpell] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         async function fetchSpell(){
-            const out = [];
+            const out:any = [];
             
             await fetch("https://www.dnd5eapi.co/api/spells")
             .then( res => {
                 return (res.json())
             }).then(data => {
-                data.results.slice(0, size ?? 10).forEach((element, index) => {
+                data.results.slice(0, size ?? 10).forEach((element:any, index:number) => {
                     fetch(`https://www.dnd5eapi.co/api/spells/${element.index}`).then(spellRaw => {
                         return spellRaw.json()
                     }).then( spell => {
