@@ -1,19 +1,32 @@
+import { useHistory, Link } from "react-router-dom";
+
 const Navbar = () => {
+
+    const history = useHistory();
+
+    function handleClick() {
+        history.push("/create");
+    }
+
     return (
         <nav className="navbar">
             <h1>Dungeons Lore</h1>
             <div className="links">
-                <a href="/">Home</a>
-                <button
-                    style={{
-                        color: "white",
-                        backgroundColor: "#E40511",
-                        borderRadius: "8px",
-                        padding: "10px 15px",
-                        border: "0px"
-                    }}
-                    onClick={() => {}}
-                ><a href="/create">New spell</a></button>
+                <Link to="/">
+                    <a>Home</a>
+                </Link>
+                <Link>
+                    <button
+                        style={{
+                            color: "white",
+                            backgroundColor: "#E40511",
+                            borderRadius: "8px",
+                            padding: "10px 15px",
+                            border: "0px"
+                        }}
+                        onClick={handleClick}
+                    >New spell</button>
+                </Link>
             </div>
         </nav>
     );

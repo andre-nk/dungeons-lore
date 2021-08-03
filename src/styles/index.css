@@ -25,7 +25,7 @@
 }
 
 .navbar a{
-  margin: 0px 30px;
+  margin: 0px 10px;
   text-decoration: none;
   padding: 6px;
 }
@@ -55,6 +55,7 @@
   display: grid;
   grid-template-columns: 95% auto auto;
   align-items: center;
+  text-decoration: none;
 }
 
 .spell-preview:hover {
@@ -70,3 +71,63 @@
 .spell-preview-list{
   padding-top: 30px;
 }
+
+.create-spell{
+  max-width: 100rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.create-spell label {
+  text-align: left;
+  display: block;
+}
+
+.create-spell h2{
+  font-size: 24px;
+  color: #E40511;
+  margin-bottom: 30px;
+}
+
+.create-spell input, .create-spell textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: block;
+  resize: none;
+}
+
+.create-spell select {
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: block;
+}
+
+.create-spell input:focus, .create-spell textarea:focus, .create-spell select:focus  {
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
+  border: 1px solid #E40511;
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: block;
+  outline: none;
+}
+
+.create-spell button{
+  background-color: #E40511;
+  color: #fff;
+  border: 0;
+  margin-top: 20px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
